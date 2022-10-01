@@ -1,0 +1,217 @@
+body {
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "nav"
+        "menu"
+        "main"
+        "footer";
+    gap: 1px;
+}
+
+nav {
+    grid-area: nav;
+    color: white (129, 208, 129);
+    background-color: rgb(55, 55, 182);
+    padding: 0 1rem;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+menu {
+    grid-area: menu;
+    background-color: aliceblue;
+    text-align: center;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    color: black;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    text-decoration-line: none;
+    color: white;
+}
+
+.contenedor-logo h3 {
+    margin: 0;
+    color: white;
+}
+
+.electric-cars {
+    display: inline;
+    justify-content: center;
+    padding-bottom: 0.1rem;
+}
+.electric-cars i {
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    font-size: 1.6rem;
+}
+.navbar-menu a {
+    display: none;
+}
+
+.icono-hamburguesa i {
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    font-size: 1.6rem;
+}
+
+menu p {
+    padding-top: 0.4rem;
+    margin: 0;
+}
+
+button {
+    background-color: white;
+    border: rgb(18, 86, 11) solid 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 20rem;
+}
+
+button p {
+    padding-left: 0.3rem;
+    padding-bottom: 0;
+    margin: 0;
+}
+.cards-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px #aeaeae solid;
+    padding: 0 0.2rem;
+    margin: 0 0.8rem;
+    margin-top: 1.5rem;
+}
+
+.card {
+    padding-bottom: 2rem;
+    max-width: 250px;
+    border: solid;
+    padding: 0.2rem;
+    margin: 0.8rem;
+    margin-top: 1rem;
+}
+
+.card-img img {
+    width: 80%;
+    height: auto;
+    padding: 0.2rem;
+    padding-top: 1.6rem;
+    padding-bottom: 1rem;
+}
+
+.card-body {
+    padding: 0%;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-body a {
+    color: white;
+    background-color: rgb(55, 55, 182);
+    padding: 0.5rem;
+    padding-top: 0.8rem;
+    padding-bottom: 1rem;
+}
+.paginacion {
+    color: black;
+    display: flex;
+    margin: 1rem;
+    margin-bottom: 0%;
+    justify-content: center;
+}
+
+.paginacion a {
+    color: black;
+    padding: 0.5rem;
+    padding-top: 0.8rem;
+    padding-bottom: 1rem;
+}
+
+
+footer i {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+}
+
+footer p {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+
+@media screen and (min-width: 576px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            "nav menu menu menu menu"
+            "nav main main main main "
+            "nav main main main main "
+            "footer main main main main";
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding-top: 1rem;
+    }
+
+    .navbar-menu {
+        padding-top: 1rem;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .navbar-menu a {
+        display: block;
+        padding-top: 1rem;
+    }
+
+    .icono-hamburguesa {
+        display: none;
+    }
+
+    menu button {
+        width: 80vw;
+    }
+   
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(4, 23%);
+        gap: 1rem;
+    }
+}
